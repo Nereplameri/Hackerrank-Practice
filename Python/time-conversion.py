@@ -24,10 +24,9 @@ def timeConversion(s):
     arr += [lastP[0:2]]
     format = lastP[2:4]
     
-    print(type(format))
     #arr : Saat, format: AM/PM
     if (format == "AM" and arr[0] == "12"):
-        arr[0] = "0"
+        arr[0] = "00"
     
     if (format == "PM" and arr[0] != "12"):
         arr[0] = str(int(arr[0]) + 12)
